@@ -29,6 +29,7 @@ cs599-project/
 ├── mcp_server.py        # MCP server（暴露音乐工具）
 ├── selftest.py          # 离线自测（mock LLM，无需 key/外网）
 ├── docs/                # Product / Architecture / API 三份 Spec
+    └── cs599_project大作业报告.pdf           #大作业报告 
 ├── Dockerfile
 ├── requirements.txt
 ├── .env.example
