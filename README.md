@@ -6,8 +6,6 @@
 ## 方向
 方向一：Agentic AI 原生开发（在开源项目基础上重构为 Agentic 系统）
 
-> 本项目基于开源项目 **[mood-playlist-ai](https://github.com/Chukwuebuka-2003/mood-playlist-ai)**（Apache 2.0）改造，原始仓库为线性脚本；本项目将其重构为带状态机、记忆、工具化与可观测性的 Agent。详见下方「改造前 vs 改造后」与 `NOTICE`。
-
 ## 技术栈
 - AI IDE: Trae CN
 - LLM: DeepSeek API（`deepseek-chat`，OpenAI 兼容）
@@ -16,16 +14,6 @@
 - 服务: FastAPI + Uvicorn
 - 记忆: SQLite
 - 容器: Docker
-
-## 改造前 vs 改造后
-| 维度 | 改造前 | 改造后 |
-| --- | --- | --- |
-| 控制流 | 线性单次脚本 | LangGraph 状态机 + 条件分支 |
-| LLM | OpenAI 硬依赖 | DeepSeek（可替换） |
-| 记忆 | 无 | SQLite 跨会话个性化 |
-| 工具 | 内联函数 | 工具化 + MCP 暴露 |
-| 可观测 | print | 节点级结构化日志 + 耗时 |
-| 运行门槛 | 强依赖 Spotify OAuth | 无 Spotify 也能跑核心闭环 |
 
 ## 目录结构
 ```
@@ -76,7 +64,7 @@ cs599-project/
 - [ ] Final（多智能体 / Agentic RAG / 云部署）
 
 ## 学生信息
-- 学号：（填写）
-- 姓名：（填写）
-- 专业：计算机技术 / 软件工程
+- 学号：2025303043
+- 姓名：许锦瀚
+- 专业：软件工程
 - 指导教师：戚欣
